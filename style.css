@@ -1,0 +1,212 @@
+/* Título con Degradado Moderno */
+.header-title h1 {
+    font-family: var(--font-titles);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header-title p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+/* Resaltado del enlace de GitHub */
+.header-title a span {
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+    transition: all 0.3s;
+}
+
+.header-title a:hover span {
+    background: rgba(99, 102, 241, 0.1);
+    border-bottom-color: var(--primary);
+}
+
+/* Contenedor principal: organiza las tarjetas en cuadrícula */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    min-height: 200px; /* Añade esto */
+    max-width: 900px;
+    margin: 30px auto;
+}
+/* Mejora en las tarjetas para que se vean "Premium" */
+.card {
+    background: var(--bg-card);
+    border: none; /* Quitamos el borde rígido */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    border-radius: 20px; /* Bordes más redondeados */
+}
+
+.card h3 {
+    font-family: var(--font-titles);
+}
+.card:hover {
+    transform: scale(1.03); /* Efecto de aumento suave */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilo del Sticker */
+.sticker {
+    font-size: 3rem; /* Tamaño grande para el emoji/sticker */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #00b894;
+    border: 2px solid #00b894;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card-content a:hover {
+    background: #00b894;
+    color: white;
+}
+footer {
+    text-align: center;
+}
+
+:root {
+    /* Nueva paleta más suave */
+    --bg-body: #f8fafc;
+    --bg-card: #ffffff;
+    --primary: #6366f1; /* Un violeta/azul moderno */
+    --accent: #10b981;  /* Verde esmeralda */
+    --text-main: #1e293b;
+    --text-secondary: #64748b;
+    
+    /* Fuentes */
+    --font-titles: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body.dark-mode {
+    --bg-body: #18191a;
+    --bg-card: #242526;
+    --text-main: #f5f6f7;
+    --text-secondary: #b0b3b8;
+    --border-color: #3e4042;
+}
+
+/* Aplicamos las variables a los elementos */
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra todo horizontalmente */
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.card-content p {
+    color: var(--text-secondary);
+}
+
+#buscador {
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    border: 2px solid var(--border-color);
+}
+
+/* Colores específicos por temática */
+
+/* Tarjeta Personal (Azul) */
+.t-personal { border-top: 5px solid #0984e3; }
+.t-personal a { color: #0984e3; border-color: #0984e3; }
+.t-personal a:hover { background: #0984e3; color: white; }
+
+/* Tarjeta Hábitos (Verde) */
+.t-habitos { border-top: 5px solid #00b894; }
+.t-habitos a { color: #00b894; border-color: #00b894; }
+.t-habitos a:hover { background: #00b894; color: white; }
+
+/* Tarjeta Biblioteca (Naranja/Amarillo) */
+.t-biblioteca { border-top: 5px solid #fdcb6e; }
+.t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
+.t-biblioteca a:hover { background: #fdcb6e; color: white; }
+
+.search-container {
+    margin: 20px auto; /* El 'auto' centra el bloque horizontalmente */
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el input y el botón de modo oscuro */
+}
+#buscador {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#buscador:focus {
+    border-color: #00b894; /* Color verde que usamos antes */
+}
+
+.btn-theme {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+.btn-theme:hover { 
+    transform: scale(1.2); 
+}
+
+.github-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 12px;
+    background: #24292e; /* Color oscuro oficial de GitHub */
+    color: white !important;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.github-link span {
+    color: white !important; /* Sobreescribimos el color verde previo */
+    font-style: normal !important;
+}
+
