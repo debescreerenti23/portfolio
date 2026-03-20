@@ -1,17 +1,34 @@
-// Función para generar el footer universal
 function cargarFooter() {
+    const anioActual = new Date().getFullYear();
+
     const footerTemplate = `
         <footer>
-            javilindj - All Rights Reserved &copy; <span id="year">${new Date().getFullYear()}</span>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/tu-usuario" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/tu-usuario" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:tu-correo@gmail.com" title="Enviar Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://instagram.com/tu-usuario" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>javilindj - All Rights Reserved &copy; <span>${anioActual}</span></p>
         </footer>
     `;
 
-    // Lo insertamos al final del body
     document.body.insertAdjacentHTML('beforeend', footerTemplate);
 }
 
-// Ejecutamos la función
-cargarFooter();
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', cargarFooter);
+} else {
+    cargarFooter();
+}
 
 /* CSS a aplicar
 
