@@ -1,8 +1,8 @@
 const proyectos = [
-    { titulo: "Web dj", descripcion: "Web ideal para dj's", link: "https://debescreerenti23.github.io/dj-website/", sticker: "🎶", clase: "t-personal" },
-    { titulo: "Hábitos", descripcion: "Control de metas", link: "https://debescreerenti23.github.io/mis-habitos/", sticker: "📅", clase: "t-habitos" },
-    { titulo: "Biblioteca", descripcion: "Mis lecturas", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" },
-    { titulo: "Web Book", descripcion: "Libro en línea muy divertido", link: "https://debescreerenti23.github.io/web-book/", sticker: "📚", clase: "t-webbook"}
+    { titulo: "Web dj", descripcion: "Concepto de web pensada para djs", link: "https://debescreerenti23.github.io/dj-website/", sticker: "🎶", clase: "t-personal" },
+    { titulo: "Hábitos", descripcion: "Controla tus hábitos diarios, mantente enfocado", link: "https://debescreerenti23.github.io/mis-habitos/", sticker: "📅", clase: "t-habitos" },
+    { titulo: "Biblioteca", descripcion: "Tu estantería personal, añade libros leídos, leyendo o en cola para leer", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" },
+    { titulo: "Web Book", descripcion: "Crea tu relato en línea y compártelo con tus contactos", link: "https://debescreerenti23.github.io/web-book/", sticker: "📚", clase: "t-webbook"}
 ];
 
 const contenedor = document.getElementById('cards-container');
