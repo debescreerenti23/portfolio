@@ -4,7 +4,7 @@
 :root {
     --bg-body: #f8fafc;
     --bg-card: #ffffff;
-    --primary: #6366f1; 
+    --primary: #63f1a3; 
     --accent: #10b981;  
     --text-main: #1e293b;
     --text-secondary: #64748b;
@@ -48,7 +48,6 @@ body {
     font-family: var(--font-titles);
     font-size: 2.5rem;
     margin-bottom: 10px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
 }
 
 .header-title p {
