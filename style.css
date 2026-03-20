@@ -69,9 +69,13 @@
 }
 
 .card-content p {
+    padding: 20px;
     font-size: 0.85rem;
     color: #777;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-content a {
@@ -83,6 +87,9 @@
     padding: 5px 15px;
     border-radius: 20px;
     transition: 0.3s;
+    align-self: center; /* Centra el botón */
+    margin-top: auto;   /* Empuja el botón siempre al fondo de la tarjeta */
+    margin-bottom: 5px; /* Pequeño margen de seguridad */
 }
 
 .card-content a:hover {
