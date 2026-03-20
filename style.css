@@ -220,3 +220,18 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     margin-top: 40px;
 }
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+        padding: 0 10px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column; /* Forzamos que todo vaya hacia abajo */
+        align-items: center;
+        text-align: center;
+    }
+}
