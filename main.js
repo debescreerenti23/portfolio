@@ -1,7 +1,8 @@
 const proyectos = [
     { titulo: "javilindj", descripcion: "Web sobre mí", link: "https://debescreerenti23.github.io/dj-website/", sticker: "🎧", clase: "t-personal" },
     { titulo: "Hábitos", descripcion: "Control de metas", link: "https://debescreerenti23.github.io/mis-habitos/", sticker: "📅", clase: "t-habitos" },
-    { titulo: "Biblioteca", descripcion: "Mis lecturas", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" }
+    { titulo: "Biblioteca", descripcion: "Mis lecturas", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" },
+    { titulo: "Web Book", descripcion: "Libro en línea muy divertido", link: "https://debescreerenti23.github.io/web-book/", sticker: "📚", clase: "t-webbook"}
 ];
 
 const contenedor = document.getElementById('cards-container');

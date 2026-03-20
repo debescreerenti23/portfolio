@@ -36,6 +36,7 @@
     min-height: 200px; /* Añade esto */
     max-width: 900px;
     margin: 30px auto;
+
 }
 /* Mejora en las tarjetas para que se vean "Premium" */
 .card {
@@ -43,6 +44,7 @@
     border: none; /* Quitamos el borde rígido */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* Sombra suave */
     border-radius: 20px; /* Bordes más redondeados */
+    text-align: center;
 }
 
 .card h3 {
@@ -210,3 +212,11 @@ body {
     font-style: normal !important;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #64748b;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: 40px;
+}
