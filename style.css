@@ -1,115 +1,16 @@
-/* Título con Degradado Moderno */
-.header-title h1 {
-    font-family: var(--font-titles);
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.header-title p {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-}
-
-/* Resaltado del enlace de GitHub */
-.header-title a span {
-    color: var(--primary);
-    font-weight: 600;
-    border-bottom: 2px solid rgba(99, 102, 241, 0.2);
-    transition: all 0.3s;
-}
-
-.header-title a:hover span {
-    background: rgba(99, 102, 241, 0.1);
-    border-bottom-color: var(--primary);
-}
-
-/* Contenedor principal: organiza las tarjetas en cuadrícula */
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 100%;
-    min-height: 200px; /* Añade esto */
-    max-width: 900px;
-    margin: 30px auto;
-
-}
-/* Mejora en las tarjetas para que se vean "Premium" */
-.card {
-    background: var(--bg-card);
-    border: none; /* Quitamos el borde rígido */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* Sombra suave */
-    border-radius: 20px; /* Bordes más redondeados */
-    text-align: center;
-}
-
-.card h3 {
-    font-family: var(--font-titles);
-}
-.card:hover {
-    transform: scale(1.03); /* Efecto de aumento suave */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Estilo del Sticker */
-.sticker {
-    font-size: 3rem; /* Tamaño grande para el emoji/sticker */
-    margin-bottom: 10px;
-    display: block;
-}
-
-.card-content h3 {
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: #333;
-}
-
-.card-content p {
-    padding: 20px;
-    font-size: 0.85rem;
-    color: #777;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.card-content a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8rem;
-    color: #00b894;
-    border: 2px solid #00b894;
-    padding: 5px 15px;
-    border-radius: 20px;
-    transition: 0.3s;
-    align-self: center; /* Centra el botón */
-    margin-top: auto;   /* Empuja el botón siempre al fondo de la tarjeta */
-    margin-bottom: 5px; /* Pequeño margen de seguridad */
-}
-
-.card-content a:hover {
-    background: #00b894;
-    color: white;
-}
-footer {
-    text-align: center;
-}
-
+/* =========================================
+   1. VARIABLES Y CONFIGURACIÓN BASE
+   ========================================= */
 :root {
-    /* Nueva paleta más suave */
     --bg-body: #f8fafc;
     --bg-card: #ffffff;
-    --primary: #6366f1; /* Un violeta/azul moderno */
-    --accent: #10b981;  /* Verde esmeralda */
+    --primary: #6366f1; 
+    --accent: #10b981;  
     --text-main: #1e293b;
     --text-secondary: #64748b;
+    --card-title: #333333;
+    --border-color: #e1e4e8;
     
-    /* Fuentes */
     --font-titles: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -120,9 +21,9 @@ body.dark-mode {
     --text-main: #f5f6f7;
     --text-secondary: #b0b3b8;
     --border-color: #3e4042;
+    --card-title: #ffffff;
 }
 
-/* Aplicamos las variables a los elementos */
 body {
     font-family: var(--font-body);
     background-color: var(--bg-body);
@@ -131,64 +32,69 @@ body {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Esto centra todo horizontalmente */
+    align-items: center;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
 }
 
-.card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
+/* =========================================
+   2. CABECERA Y BUSCADOR
+   ========================================= */
+.header-title {
+    text-align: center;
 }
 
-.card-content p {
+.header-title h1 {
+    font-family: var(--font-titles);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-title p {
+    font-size: 1.1rem;
     color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
 }
 
-#buscador {
-    background-color: var(--bg-card);
-    color: var(--text-main);
-    border: 2px solid var(--border-color);
+.github-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 12px;
+    background: #24292e;
+    color: white !important;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-left: 5px;
 }
-
-/* Colores específicos por temática */
-
-/* Tarjeta Personal (Azul) */
-.t-personal { border-top: 5px solid #0984e3; }
-.t-personal a { color: #0984e3; border-color: #0984e3; }
-.t-personal a:hover { background: #0984e3; color: white; }
-
-/* Tarjeta Hábitos (Verde) */
-.t-habitos { border-top: 5px solid #00b894; }
-.t-habitos a { color: #00b894; border-color: #00b894; }
-.t-habitos a:hover { background: #00b894; color: white; }
-
-/* Tarjeta Biblioteca (Naranja/Amarillo) */
-.t-biblioteca { border-top: 5px solid #fdcb6e; }
-.t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
-.t-biblioteca a:hover { background: #fdcb6e; color: white; }
 
 .search-container {
-    margin: 20px auto; /* El 'auto' centra el bloque horizontalmente */
+    margin: 20px auto;
     width: 100%;
     max-width: 400px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el input y el botón de modo oscuro */
+    gap: 10px;
 }
+
 #buscador {
-    width: 100%;
+    flex: 1;
     padding: 12px 20px;
     border-radius: 25px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-card);
+    color: var(--text-main);
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
 }
 
 #buscador:focus {
-    border-color: #00b894; /* Color verde que usamos antes */
+    border-color: var(--primary);
 }
 
 .btn-theme {
@@ -196,49 +102,122 @@ body {
     border: none;
     background: none;
     font-size: 1.5rem;
-    padding: 10px;
     transition: transform 0.2s;
 }
+
 .btn-theme:hover { 
     transform: scale(1.2); 
 }
 
-.github-link {
-    text-decoration: none;
-    display: inline-block;
-    padding: 4px 12px;
-    background: #24292e; /* Color oscuro oficial de GitHub */
-    color: white !important;
-    border-radius: 8px;
+/* =========================================
+   3. CONTENEDOR DE TARJETAS (GRID)
+   ========================================= */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* =========================================
+   4. TARJETAS (ESTILO INDIVIDUAL)
+   ========================================= */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.sticker {
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Esto empuja el contenido para usar todo el espacio */
+}
+
+.card-content h3 {
+    font-family: var(--font-titles);
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: var(--card-title);
+}
+
+.card-content p {
     font-size: 0.9rem;
-    margin-left: 5px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.github-link span {
-    color: white !important; /* Sobreescribimos el color verde previo */
-    font-style: normal !important;
+.card-content a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    align-self: center;
+    margin-top: auto; /* Empuja el botón al fondo siempre */
+    border: 2px solid;
 }
 
+/* =========================================
+   5. TEMÁTICAS (COLORES ESPECÍFICOS)
+   ========================================= */
+.t-personal { border-top: 6px solid #0984e3; }
+.t-personal a { color: #0984e3; border-color: #0984e3; }
+.t-personal a:hover { background: #0984e3; color: white; }
+
+.t-habitos { border-top: 6px solid #00b894; }
+.t-habitos a { color: #00b894; border-color: #00b894; }
+.t-habitos a:hover { background: #00b894; color: white; }
+
+.t-biblioteca { border-top: 6px solid #fdcb6e; }
+.t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
+.t-biblioteca a:hover { background: #fdcb6e; color: white; }
+
+/* =========================================
+   6. FOOTER Y RESPONSIVE
+   ========================================= */
 footer {
     text-align: center;
-    padding: 20px;
-    font-family: 'Inter', sans-serif;
-    color: #64748b;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    margin-top: 40px;
+    padding: 30px;
+    font-family: var(--font-body);
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    margin-top: auto;
 }
 
 @media (max-width: 480px) {
     .cards-container {
-        grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+        grid-template-columns: 1fr;
         padding: 0 10px;
     }
 
+    .header-title h1 {
+        font-size: 2rem;
+    }
+    
     .card {
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column; /* Forzamos que todo vaya hacia abajo */
-        align-items: center;
-        text-align: center;
+        min-height: 280px; /* Asegura un buen tamaño en móvil */
     }
 }
