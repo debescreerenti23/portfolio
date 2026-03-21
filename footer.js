@@ -7,13 +7,13 @@ function cargarFooter() {
                 <a href="https://linkedin.com/in/tu-usuario" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/tu-usuario" target="_blank" title="GitHub">
+                <a href="https://github.com/debescreerenti23" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:tu-correo@gmail.com" title="Enviar Email">
+                <a href="mailto:javigallegofenor@gmail.com" title="Enviar Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://instagram.com/tu-usuario" target="_blank" title="Instagram">
+                <a href="https://instagram.com/javilindj" target="_blank" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -40,5 +40,6 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     margin-top: 40px;
 }
+
 
 */
