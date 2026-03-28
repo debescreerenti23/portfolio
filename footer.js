@@ -4,7 +4,7 @@ function cargarFooter() {
     const footerTemplate = `
         <footer>
             <div class="social-links">
-                <a href="https://linkedin.com/in/tu-usuario" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/javier-gallego-4b033815a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="https://github.com/debescreerenti23" target="_blank" title="GitHub">

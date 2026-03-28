@@ -42,6 +42,7 @@ body {
    ========================================= */
 .header-title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .header-title h1 {
@@ -53,106 +54,16 @@ body {
 .header-title p {
     font-size: 1.1rem;
     color: var(--text-secondary);
-<<<<<<< HEAD
 }
-
-#buscador {
-    background-color: var(--bg-card);
-    color: var(--text-main);
-    border: 2px solid var(--border-color);
-}
-
-/* Colores específicos por temática */
-
-/* Tarjeta Personal (Azul) */
-.t-personal { border-top: 5px solid #0984e3; }
-.t-personal a { color: #0984e3; border-color: #0984e3; }
-.t-personal a:hover { background: #0984e3; color: white; }
-
-/* Tarjeta Hábitos (Verde) */
-.t-habitos { border-top: 5px solid #00b894; }
-.t-habitos a { color: #00b894; border-color: #00b894; }
-.t-habitos a:hover { background: #00b894; color: white; }
-
-/* Tarjeta Biblioteca (Naranja/Amarillo) */
-.t-biblioteca { border-top: 5px solid #fdcb6e; }
-.t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
-.t-biblioteca a:hover { background: #fdcb6e; color: white; }
-
-/* Tarjeta Videojuego (Naranja/Verde) */
-.t-biblioteca { border-top: 5px solid #fdcb6e; }
-.t-biblioteca a { color: #d5826d; border-color: #fdcb6e; }
-.t-biblioteca a:hover { background: #69c28c; color: white; }
-
-
-
 
 .search-container {
-    margin: 30px auto; /* Aumentamos margen para dar aire */
+    margin: 30px auto;
     width: 100%;
-    max-width: 500px; /* Un poco más ancho para que quepa el botón bien */
+    max-width: 500px;
     display: flex;
-    justify-content: center; /* Centra el contenido interno */
+    justify-content: center;
     align-items: center;
     gap: 15px; 
-}
-
-#buscador {
-    flex: 1; /* Esto hace que el buscador ocupe todo el espacio sobrante */
-    padding: 12px 20px;
-    border-radius: 25px;
-    border: 2px solid #ddd;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s;
-}
-
-#buscador:focus {
-    border-color: #00b894; /* Color verde que usamos antes */
-}
-
-.btn-theme {
-    cursor: pointer;
-    border: none;
-    background: var(--bg-card); /* Le damos fondo de tarjeta para que destaque */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Un poco de relieve */
-    width: 45px;
-    height: 45px;
-    border-radius: 50%; /* Lo hacemos circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    transition: transform 0.2s, background 0.3s;
-    flex-shrink: 0; /* Evita que el botón se aplaste */
-}
-
-.btn-theme:hover { 
-    transform: scale(1.2);
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-
-}
-
-.github-link {
-    text-decoration: none;
-    display: inline-block;
-    padding: 4px 12px;
-    background: #24292e;
-    color: white !important;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    margin-left: 5px;
-}
-
-.search-container {
-    margin: 20px auto;
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 #buscador {
@@ -164,23 +75,31 @@ body {
     color: var(--text-main);
     font-size: 1rem;
     outline: none;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
 }
 
 #buscador:focus {
-    border-color: var(--primary);
+    border-color: var(--accent);
 }
 
 .btn-theme {
     cursor: pointer;
     border: none;
-    background: none;
-    font-size: 1.5rem;
-    transition: transform 0.2s;
+    background: var(--bg-card);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background 0.3s;
+    flex-shrink: 0;
 }
 
 .btn-theme:hover { 
-    transform: scale(1.2); 
+    transform: scale(1.1);
 }
 
 /* =========================================
@@ -224,7 +143,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Esto empuja el contenido para usar todo el espacio */
+    flex-grow: 1;
 }
 
 .card-content h3 {
@@ -249,7 +168,7 @@ body {
     border-radius: 20px;
     transition: 0.3s;
     align-self: center;
-    margin-top: auto; /* Empuja el botón al fondo siempre */
+    margin-top: auto;
     border: 2px solid;
 }
 
@@ -268,8 +187,20 @@ body {
 .t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
 .t-biblioteca a:hover { background: #fdcb6e; color: white; }
 
+.t-tenis { border-top: 6px solid #7f6638; }
+.t-tenis a { color: #d5826d; border-color: #7f6638; }
+.t-tenis a:hover { background: #69c28c; color: white; }
+
+.t-goal { border-top: 6px solid #38607f; }
+.t-goal a { color: #6aca57; border-color: #7f6638; }
+.t-goal a:hover { background: #69c28c; color: white; }
+
+.t-memory { border-top: 6px solid #d93b3b; }
+.t-memory a { color: #367777; border-color: #7f6638; }
+.t-memory a:hover { background: #7669c2; color: white; }
+
 /* =========================================
-   6. FOOTER Y RESPONSIVE
+   6. FOOTER Y REDES
    ========================================= */
 footer {
     text-align: center;
@@ -281,21 +212,6 @@ footer {
     margin-top: auto;
 }
 
-@media (max-width: 480px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-    }
-
-    .header-title h1 {
-        font-size: 2rem;
-    }
-    
-    .card {
-        min-height: 280px; /* Asegura un buen tamaño en móvil */
-    }
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -304,7 +220,7 @@ footer {
 }
 
 .social-links a {
-    color: inherit; /* Toma el color del footer (blanco o gris) */
+    color: inherit;
     font-size: 1.5rem;
     text-decoration: none;
     transition: transform 0.3s, color 0.3s;
@@ -314,10 +230,15 @@ footer {
 .social-links a:hover {
     transform: translateY(-3px);
     opacity: 1;
-    color: #63f1c2; /* Un color que destaque al hacer hover */
+    color: var(--primary);
 }
 
-footer p {
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .header-title h1 {
+        font-size: 2rem;
+    }
 }
