@@ -167,6 +167,14 @@ body {
 .t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
 .t-biblioteca a:hover { background: #fdcb6e; color: white; }
 
+/* Tarjeta Videojuego (Naranja/Verde) */
+.t-biblioteca { border-top: 5px solid #fdcb6e; }
+.t-biblioteca a { color: #d5826d; border-color: #fdcb6e; }
+.t-biblioteca a:hover { background: #69c28c; color: white; }
+
+
+
+
 .search-container {
     margin: 30px auto; /* Aumentamos margen para dar aire */
     width: 100%;
