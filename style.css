@@ -233,6 +233,22 @@ footer {
     color: var(--primary);
 }
 
+.header-title p {
+    font-size: 1.15rem;            /* Un pelín más grande para que se lea bien */
+    color: var(--text-secondary);
+    max-width: 700px;              /* Límite de ancho para legibilidad */
+    margin: 0 auto 40px auto;      /* Centrado y con aire debajo */
+    line-height: 1.8;              /* Más espacio entre líneas (interlineado) */
+    text-align: center;
+    font-weight: 300;              /* Un peso más ligero si usas fuentes como Inter o Poppins */
+}
+
+/* Resaltado para las palabras clave que pusimos en <strong> */
+.header-title p strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
 @media (max-width: 480px) {
     .cards-container {
         grid-template-columns: 1fr;
