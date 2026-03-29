@@ -1,9 +1,9 @@
 const proyectos = [
     { titulo: "Web book", descripcion: "Un simpatico ejemplo de como crear un relato online", link: "https://debescreerenti23.github.io/web-book/", sticker: "📖", clase: "t-personal" },
-    { titulo: "Hábitos", descripcion: "Control de metas", link: "https://debescreerenti23.github.io/mis-habitos/", sticker: "📅", clase: "t-habitos" },
-    { titulo: "Biblioteca", descripcion: "Tu biblioteca personal", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" },
-    { titulo: "Videojuego " , descripcion: "Juego de tenis de mesa", link: "https://debescreerenti23.github.io/table-tennis/", sticker: "🕹️", clase: "t-tenis"},
-    { titulo: "Metas", descripcion: "Establece tus metas, si lo escribes puedes hacerlo", link:"https://debescreerenti23.github.io/make-gol/", sticker: "🎯", clase: "t-goal"},
+    { titulo: "Hábitos", descripcion: "Haz un seguimiento de tus hábitos diario, crea tu lista personalizada", link: "https://debescreerenti23.github.io/mis-habitos/", sticker: "📅", clase: "t-habitos" },
+    { titulo: "Biblioteca", descripcion: "Tu biblioteca personal, añade los libros leídos, leyendo y por leer", link: "https://debescreerenti23.github.io/mi-biblioteca/", sticker: "📚", clase: "t-biblioteca" },
+    { titulo: "Videojuego " , descripcion: "Juego de tenis de mesa futurista muy adictivo", link: "https://debescreerenti23.github.io/table-tennis/", sticker: "🕹️", clase: "t-tenis"},
+    { titulo: "Metas", descripcion: "Establece tus metas, si lo escribes estás más cerca de conseguirlo", link:"https://debescreerenti23.github.io/make-gol/", sticker: "🎯", clase: "t-goal"},
     { titulo: "Brain Videogame", descripcion: "Entrena tu mente con este rompe-cabezas", link: "https://debescreerenti23.github.io/memory-game/", sticker: "🧠", clase: "t-memory"}
 ];
 
