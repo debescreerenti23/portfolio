@@ -184,20 +184,20 @@ body {
 .t-habitos a:hover { background: #00b894; color: white; }
 
 .t-biblioteca { border-top: 6px solid #fdcb6e; }
-.t-biblioteca a { color: #e17055; border-color: #fdcb6e; }
+.t-biblioteca a { color: #fdcb6e; border-color: #fdcb6e; }
 .t-biblioteca a:hover { background: #fdcb6e; color: white; }
 
 .t-tenis { border-top: 6px solid #7f6638; }
-.t-tenis a { color: #d5826d; border-color: #7f6638; }
-.t-tenis a:hover { background: #69c28c; color: white; }
+.t-tenis a { color: #7f6638; border-color: #7f6638; }
+.t-tenis a:hover { background: #7f6638; color: white; }
 
 .t-goal { border-top: 6px solid #38607f; }
-.t-goal a { color: #6aca57; border-color: #7f6638; }
-.t-goal a:hover { background: #69c28c; color: white; }
+.t-goal a { color: #38607f; border-color: #38607f; }
+.t-goal a:hover { background: #38607f; color: white; }
 
-.t-memory { border-top: 6px solid #d93b3b; }
-.t-memory a { color: #367777; border-color: #7f6638; }
-.t-memory a:hover { background: #7669c2; color: white; }
+.t-memory { border-top: 6px solid #367777; }
+.t-memory a { color: #367777; border-color: #367777; }
+.t-memory a:hover { background: #508f7c; color: white; }
 
 /* =========================================
    6. FOOTER Y REDES
